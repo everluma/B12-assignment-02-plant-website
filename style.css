@@ -67,6 +67,18 @@ nav ul li a:hover {
     color:orangered;
 }
 
+.cart img {
+    width: 24px;
+    height: 24px;
+    display: block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.cart img:hover {
+    transform: scale(1.1);
+}
+
 
 
 
@@ -75,14 +87,35 @@ nav ul li a:hover {
 
 /* Responsive Design  */
 
+/* Mobile Version  */
 @media (max-width: 768px) {
     .header-top {
         flex-direction: column;
         gap: 20px;
     }
 
-    nav ul {
+    nav ul:not(.cart) {
         flex-direction: column;
         gap: 15px;
+        display: none;
+    }
+}
+
+
+@media (max-width:1024px) {
+    .header-top {
+        padding: 16px 20px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    nav ul{
+        gap: 18px;
+    }
+
+    nav a {
+        font-size: 16px;
     }
 }
