@@ -93,16 +93,21 @@ nav ul li a:hover {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        /* gap: 20px; */
+        
     }
 
     nav ul li:not(.cart) {
-        /* flex-direction: column;
-        gap: 15px; */
+     
         display: none;
     }
-    .cart {
+
+    nav ul li.cart {
         display: block;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 20px;
     }
 }
 
