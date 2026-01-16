@@ -99,9 +99,12 @@ nav ul li a:hover {
         gap: 15px;
         display: none;
     }
+    .cart {
+        display: block;
+    }
 }
 
-
+/* Tablet Version  */
 @media (max-width:1024px) {
     .header-top {
         padding: 16px 20px;
