@@ -90,13 +90,15 @@ nav ul li a:hover {
 /* Mobile Version  */
 @media (max-width: 768px) {
     .header-top {
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /* gap: 20px; */
     }
 
-    nav ul:not(.cart) {
-        flex-direction: column;
-        gap: 15px;
+    nav ul li:not(.cart) {
+        /* flex-direction: column;
+        gap: 15px; */
         display: none;
     }
     .cart {
